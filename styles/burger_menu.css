@@ -1,0 +1,102 @@
+.btn-open-burger-menu {
+    background: transparent;
+    transition: transform .35s cubic-bezier(.4, 0, .2, 1);
+
+}
+
+.btn-open-burger-menu:hover {
+    transform: scale(1.1);
+}
+
+.burger_menu_close_btn {
+    background: transparent
+}
+
+.burger_menu_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.burger_menu_wrap {
+    display: none;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+    background: #100f0f;
+    top: 0;
+    overflow-y: scroll;
+    animation: .45s burgerMenuOpening
+}
+
+@keyframes burgerMenuOpening {
+    0% {
+        -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+        transform: translate3d(100%, 0, 0) skewX(-30deg);
+        opacity: 0;
+    }
+
+    60% {
+        -webkit-transform: skewX(20deg);
+        transform: skewX(20deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: skewX(-5deg);
+        transform: skewX(-5deg);
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+.burger_menu_contact_btn:hover {
+    border: 1px solid #bc1a1a80;
+    color: #bc1a1a80;
+    box-shadow: 0 4px 4px #ffffff0d;
+}
+
+.header_nav_list_burger {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.header_nav_list_burger a {
+    font-size: 20px;
+}
+
+.burger_menu_contact_btn {
+    color: #f3f3f3;
+    background: transparent;
+    border-radius: 16px;
+    border: 1px solid #f3f3f3;
+    padding: 10px 25px;
+    font-weight: 800;
+    margin: 50px 0 0 0;
+    transition: border-color .35s cubic-bezier(.4, 0, .2, 1),
+        color .35s cubic-bezier(.4, 0, .2, 1),
+        box-shadow .35s cubic-bezier(.4, 0, .2, 1);
+}
+
+
+.header_nav_list_burger a {
+    text-decoration: none;
+    color: #f3f3f3;
+    font-weight: 600;
+    transition: color .35s cubic-bezier(.4, 0, .2, 1);
+    padding: 10px;
+}
+
+
+.header_nav_list_burger a:hover {
+    color: #bc1a1a80;
+
+}

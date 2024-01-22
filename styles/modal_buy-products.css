@@ -1,0 +1,105 @@
+.modal_buy-products {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.149);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.modal_buy-products_select_departments {
+    margin: 10px 0 0 0;
+}
+
+
+.delivery_adress_textarea {
+    margin: 10px 0 0 0;
+}
+
+.modal_buy-products_btn-sub {
+    margin: 20px 0 0 0;
+}
+
+.modal_buy-products_delivery {
+    display: flex;
+    margin: 5px 25px 20px 25px;
+}
+
+.modal_buy-products_delivery-way_radio {
+    display: none;
+}
+
+.modal_buy-products_delivery-way {
+    padding: 20px;
+    border: 1px solid #f3f3f3;
+    width: 50%;
+    text-align: center;
+
+}
+
+.modal_buy-products_delivery :first-child {
+    border-radius: 16px 0 0 16px
+}
+
+.modal_buy-products_delivery :last-child {
+    border-radius: 0 16px 16px 0
+}
+
+.checked {
+    background: #f3f3f3;
+    color: #100f0f
+}
+
+.modal_buy-products_delivery_adress {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+/* 
+.buy-products_adress_wrap {
+    display: flex;
+    justify-content: space-around;
+
+} */
+
+.modal_buy-products_select_cities,
+.modal_buy-products_select_departments {
+    padding: 15px 12px;
+    width: 100%;
+    background: #100f0f;
+    border: 1px solid #f3f3f3;
+    border-radius: 16px;
+    font-size: 16px;
+    color: white;
+    outline: none;
+}
+
+option {
+    color: white;
+
+}
+
+.user_comment_to_order {
+    margin: 20px 0;
+}
+
+.modal_buy-products_payment_heading,.modal_buy-products_delivery-heading {
+    font-size: 22px;
+    font-weight: 500;
+    /* margin: 15px 0 15px 0; */
+}
+/* .modal_buy-products_delivery-heading {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 15px 0 0 0;
+} */
+
+.modal_buy-products_payment_radio {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+}

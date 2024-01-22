@@ -1,0 +1,85 @@
+footer {
+    margin: 80px 0 0 0;
+    padding: 50px 0 0 0;
+    border-top: 1px solid #f3f3f399
+}
+
+.footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.footer_social-media-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_social-media-list li {
+    padding: 10px;
+}
+
+.footer_conditions {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0 0 0;
+    color: #979797;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+
+.footer_conditions_link {
+    color: #f3f3f3;
+}
+
+.footer_nav-list a,
+.footer_location-list a {
+    text-decoration: none;
+    color: #f3f3f3;
+    transition: color .35s cubic-bezier(.4, 0, .2, 1);
+}
+
+.footer_nav-list a:hover,
+.footer_location-list a:hover {
+    color: #bc1a1a80
+}
+
+.footer_nav-list li:not(:last-child),
+.footer_location-list li:not(:last-child) {
+    margin: 0 0 50px 0;
+}
+
+.footer_location-list_icon {
+    margin: 0 10px 0 0;
+}
+
+.footer_location-list_link:hover .footer_location-list_icon,
+.footer_location-list_email:hover .footer_location-list_icon {
+    fill: #bc1a1a80
+}
+
+.footer_location-list_link:hover,
+.footer_location-list_email:hover {
+    color: #bc1a1a80
+}
+
+.footer_location-list_link,
+.footer_location-list_email {
+    transition: color .35s cubic-bezier(.4, 0, .2, 1)
+}
+
+.footer_location-list_link svg {
+    vertical-align: bottom;
+}
+
+.footer_location-list_email svg {
+    vertical-align: middle;
+}
+
+.footer_location-list_icon {
+    fill: #f3f3f3;
+    transition: fill .35s cubic-bezier(.4, 0, .2, 1)
+}

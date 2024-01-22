@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <nav class="header_nav">
+          <a class="logo_link" href="#">
+            <svg class="logo_svg" width="30px" height="30px">
+              <use href="/img/svg_icons.svg#logo"></use></svg
+            >cucina
+          </a>
+          <ul class="header_nav_list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#store">Store</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+          <button class="header_nav_btn js--btn_contact_us">Contact us</button>
+          <button class="btn-open-burger-menu">
+            <svg width="32px" height="32px" class="burger-menu-open-svg">
+              <use href="./img/svg_icons.svg#burger-menu"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+      <div class="burger_menu_wrap">
+        <div class="burger_menu_header">
+          <a class="logo_link" href="#">
+            <svg class="logo_svg" width="30px" height="30px">
+              <use href="/img/svg_icons.svg#logo"></use></svg
+            >cucina
+          </a>
+          <button class="burger_menu_close_btn">
+            <svg width="32px" height="32px" class="close_btn_icon">
+              <use href="./img/svg_icons.svg#close_btn_icon"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="header_nav_list_burger">
+          <li><a href="#">Home</a></li>
+          <li><a href="#store">Store</a></li>
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+        <button class="burger_menu_contact_btn js--btn_contact_us">
+          Contact us
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper main_container">
+        <div class="main_content">
+          <h1 class="main_heading">Cucina di catherina</h1>
+          <h2 class="main_subheading">
+            We know,
+            <span class="main_subheading_new-line">
+              you will <span class="main_subheading_accent">love</span> our
+              product
+            </span>
+          </h2>
+          <button class="main_btn js--btn_buy">Buy now</button>
+          <div class="main_content_info-products">
+            <span class="main_content_info-products_accent">14</span>
+            <p>different tastes</p>
+            <span class="main_content_info-products_accent">31</span>
+            <p>factories around the world</p>
+          </div>
+        </div>
+
+        <div class="main_img-wrapp">
+          <picture>
+            <source
+              srcset="./img/main/bottle_of_sause.webp"
+              media="(min-width:960px)"
+              type="image/webp"
+            />
+            <source
+              srcset="./img/main/bottle_of_sause_small.webp"
+              width="217"
+              height="350"
+              media="(min-width:415px)"
+              type="image/webp"
+            />
+            <source
+              srcset="./img/store/spicy_pepper_sause_small.webp"
+              width="217"
+              height="350"
+              media="(max-width:415px)"
+              type="image/webp"
+            />
+            <img
+              src="./img/main/bottle_of_sause.webp"
+              alt="bottle of sause"
+              class="main_img-bottle"
+            />
+          </picture>
+        </div>
+        <ul class="main_social-media-list">
+          <li>
+            <a href="https://www.tumblr.com/" target="_blank">
+              <svg width="24px" height="24px" class="icon_tumbler">
+                <use href="./img/svg_icons.svg#tumbler_icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <svg width="24px" height="24px" class="icon_instagram">
+                <use href="./img/svg_icons.svg#instagram_icon"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/" target="_blank">
+              <svg width="24px" height="24px" class="icon_youtube">
+                <use href="./img/svg_icons.svg#youtube_icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" target="_blank">
+              <svg width="24px" height="24px" class="icon_twitter">
+                <use href="./img/svg_icons.svg#twitter_icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <section class="products" id="store">
+      <div class="wrapper products_wrapper">
+        <h2 class="products_heading">Our products</h2>
+        <ul class="products_list js--slides active">
+          <li>
+            <picture class="products_list_container">
+              <source
+                srcset="./img/store/hot_sause.webp"
+                media="(min-width:1140px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/store/hot_sause.webp"
+                media="(min-width:960px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/store/hot_sause.webp"
+                width="156"
+                height="156"
+                media="(min-width:415px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/store/hot_sause.webp"
+                width="156"
+                height="156"
+                media="(max-width:415px)"
+                type="image/webp"
+              />
+              <img src="./img/store/hot_sause.webp" alt="image of hot sauce" />
+            </picture>
+
+            <div>
+              <h4 class="products_list_heading">Hot sauce</h4>
+              <p class="products_list_desc">
+                The most delicate taste of tomatoes, combined with branded
+                spices and white wine, will make your dish incredibly tasty.
+              </p>
+              <button class="products_list_btn js--btn_buy">Buy now</button>
+            </div>
+          </li>
+
+          <li>
+            <div
+              class="products_list_content products_list_content_with-margin"
+            >
+              <h4 class="products_list_heading">Spicy sauce</h4>
+              <p class="products_list_desc">
+                For thrill-seekers, we added hot chili pepper to our sauce, it
+                also reveals all the tastes and aromas of the sauce well.
+              </p>
+              <button class="products_list_btn js--btn_buy">Buy now</button>
+            </div>
+            <picture>
+              <source
+                srcset="./img/store/spicy_sause.webp"
+                media="(min-width:1140px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/store/spicy_sause.webp"
+                media="(min-width:960px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/store/spicy_sause.webp"
+                width="156"
+                height="156"
+                media="(min-width:415px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/store/spicy_sause.webp"
+                width="156"
+                height="156"
+                media="(max-width:415px)"
+                type="image/webp"
+              />
+              <img
+                src="./img/store/spicy_sause.webp"
+                alt="image of spicy sauce"
+              />
+            </picture>
+          </li>
+        </ul>
+
+        <ul class="products_list js--slides none">
+          <li>
+            <picture class="products_list_container">
+              <source
+                srcset="./img/store/classic_tomato_sause.webp"
+                media="(min-width:1140px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/store/classic_tomato_sause.webp"
+                media="(min-width:960px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/store/classic_tomato_sause.webp"
+                width="156"
+                height="156"
+                media="(min-width:415px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/store/classic_tomato_sause.webp"
+                width="156"
+                height="156"
+                media="(max-width:415px)"
+                type="image/webp"
+              />
+              <img
+                src="./img/store/classic_tomato_sause.webp"
+                alt="image of classic tomato sauce"
+              />
+            </picture>
+
+            <div>
+              <h4 class="products_list_heading">Classic tomato</h4>
+              <p class="products_list_desc">
+                For thrill-seekers, we added hot chili pepper to our sauce, it
+                also reveals all the tastes and aromas of the sauce well
+              </p>
+              <button class="products_list_btn js--btn_buy">Buy now</button>
+            </div>
+          </li>
+          <li>
+            <div class="products_list_content_with-margin">
+              <h4 class="products_list_heading">Basilico sauce</h4>
+              <p class="products_list_desc">
+                The most delicate taste of tomatoes, combined with branded
+                spices and white wine, will make your dish incredibly tasty.
+              </p>
+              <button class="products_list_btn js--btn_buy">Buy now</button>
+            </div>
+            <picture>
+              <source
+                srcset="./img/store/basilico_sause.webp"
+                media="(min-width:1140px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/store/basilico_sause.webp"
+                media="(min-width:960px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/store/basilico_sause.webp"
+                width="156"
+                height="156"
+                media="(min-width:415px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/store/basilico_sause.webp"
+                width="156"
+                height="156"
+                media="(max-width:415px)"
+                type="image/webp"
+              />
+              <img
+                src="./img/store/basilico_sause.webp"
+                alt="image of basilico sauce"
+              />
+            </picture>
+          </li>
+        </ul>
+
+        <ul class="products_list js--slides none">
+          <li>
+            <picture class="products_list_container">
+              <source
+                srcset="./img/store/classic_sause.webp"
+                media="(min-width:1140px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/store/classic_sause.webp"
+                media="(min-width:960px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/store/classic_sause.webp"
+                width="156"
+                height="156"
+                media="(min-width:415px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/store/classic_sause.webp"
+                width="156"
+                height="156"
+                media="(max-width:415px)"
+                type="image/webp"
+              />
+              <img
+                src="./img/store/classic_sause.webp"
+                alt="image of classic sauce"
+              />
+            </picture>
+
+            <div>
+              <h4 class="products_list_heading">Classic sauce</h4>
+              <p class="products_list_desc">
+                Will make your dish incredibly tasty, combined with branded
+                spices and white wine, will make your dish incredibly tasty.
+              </p>
+              <button class="products_list_btn js--btn_buy">Buy now</button>
+            </div>
+          </li>
+          <li>
+            <div class="products_list_content_with-margin">
+              <h4 class="products_list_heading">Spicy sauce</h4>
+              <p class="products_list_desc">
+                The cauple of tomatoes, combined with branded spices and white
+                wine, will make your dish incredibly tasty.
+              </p>
+              <button class="products_list_btn js--btn_buy">Buy now</button>
+            </div>
+            <picture>
+              <source
+                srcset="./img/store/spicy_pepper_sause.webp"
+                media="(min-width:1140px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/store/spicy_pepper_sause.webp"
+                media="(min-width:960px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/store/spicy_pepper_sause.webp"
+                width="156"
+                height="156"
+                media="(min-width:415px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/store/spicy_pepper_sause.webp"
+                width="156"
+                height="156"
+                media="(max-width:415px)"
+                type="image/webp"
+              />
+              <img
+                src="./img/store/spicy_pepper_sause.webp"
+                alt="image of spice pepper sauce"
+              />
+            </picture>
+          </li>
+        </ul>
+        <button class="slider_btn-next">
+          <svg width="30px" height="30px">
+            <use href="./img/svg_icons.svg#slider_icon_arrow"></use>
+          </svg>
+        </button>
+        <button class="slider_btn-previos">
+          <svg width="30px" height="30px">
+            <use href="./img/svg_icons.svg#slider_icon_arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+    <section class="recipes" id="recipes">
+      <div class="wrapper">
+        <h2 class="recipes_heading">Our recipes</h2>
+        <ul class="recipes_list">
+          <li>
+            <iframe src="https://www.youtube.com/embed/Svk1SwdL1eg"></iframe>
+            <p class="recipes_list_desc">Tomato paste</p>
+          </li>
+          <li>
+            <iframe src="https://www.youtube.com/embed/5wWGF57tp7U"></iframe>
+            <p class="recipes_list_desc">Bell paper paste</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="gallery" id="gallery">
+      <div class="wrapper">
+        <div class="gallery_wrap">
+          <h2 class="gallery_heading">Gallery</h2>
+          <button class="gallery_btn-next js--gallery_btn-next">
+            <svg width="24px" height="24px">
+              <use href="./img/svg_icons.svg#slider_icon_arrow"></use>
+            </svg>
+          </button>
+          <button class="gallery_btn-prev js--gallery_btn-prev">
+            <svg width="24px" height="24px">
+              <use href="./img/svg_icons.svg#slider_icon_arrow"></use>
+            </svg>
+          </button>
+
+          <div class="gallery">
+            <img
+              src="./img/gallery/children_with_tomato.webp"
+              class="gallery_img active"
+              alt="children are smelling tomatos"
+            />
+            <img
+              src="./img/gallery/tomato_picking.2webp.webp"
+              class="gallery_img none"
+              alt="process of picking of tomatos"
+            />
+            <img
+              src="./img/gallery/tomato_picking.webp"
+              class="gallery_img none"
+              alt="process of picking of tomatos"
+            />
+          </div>
+          <div class="gallery_pagination js--gallery_pagination"></div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrapper footer_wrapper">
+        <a class="logo_link" href="#">
+          <svg class="logo_svg" width="30px" height="30px">
+            <use href="/img/svg_icons.svg#logo"></use></svg
+          >cucina
+        </a>
+        <ul class="footer_nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#store">Store</a></li>
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+        <ul class="footer_location-list">
+          <li>
+            <a
+              href="https://www.google.com/maps/search/Elvia+Elviaveien+1,+1234+Oslo/@59.8937806,10.6450355,11z/data=!3m1!4b1"
+              class="footer_location-list_link"
+              target="_blank"
+            >
+              <svg width="24px" height="24px" class="footer_location-list_icon">
+                <use href="/img/svg_icons.svg#location_icon"></use></svg
+              >Elviaveien 1, 1234 Oslo</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:willie.jennings@example.com"
+              class="footer_location-list_email"
+            >
+              <svg width="24px" height="24px" class="footer_location-list_icon">
+                <use href="/img/svg_icons.svg#email_icon"></use></svg
+              >willie.jennings@example.com</a
+            >
+          </li>
+        </ul>
+        <ul class="footer_social-media-list">
+          <li>
+            <a href="https://www.tumblr.com/" target="_blank">
+              <svg width="24px" height="24px" class="icon_tumbler">
+                <use href="./img/svg_icons.svg#tumbler_icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <svg width="24px" height="24px" class="icon_instagram">
+                <use href="./img/svg_icons.svg#instagram_icon"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/" target="_blank">
+              <svg width="24px" height="24px" class="icon_youtube">
+                <use href="./img/svg_icons.svg#youtube_icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" target="_blank">
+              <svg width="24px" height="24px" class="icon_twitter">
+                <use href="./img/svg_icons.svg#twitter_icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="footer_conditions">
+          By using this website, you agree to the
+          <a class="footer_conditions_link" href="#"> Terms of Service</a>
+          and <a class="footer_conditions_link" href="#"> Privacy Policy</a>
+        </p>
+      </div>
+    </footer>
+    <div class="modal_contact-us">
+      <div class="modal_contact-us_content">
+        <h3 class="modal_contact-us_content_heading">
+          Leave your contacts and we will contact you
+        </h3>
+        <form action="#" method="GET" class="modal_contact-us_form">
+          <label for="user_name_contact">Name</label>
+          <div class="input-box">
+            <input
+              name="user_name"
+              type="text"
+              id="user_name_contact"
+              class="user_name_contact user_name"
+              placeholder="Maria"
+            />
+          </div>
+          <label for="user_tel_contact">Phone</label>
+          <div class="input-box">
+            <input
+              type="tel"
+              name="user_tel"
+              placeholder="+380"
+              value="+380"
+              id="user_tel_contact"
+              class="user_tel_contact user_tel contacts-input"
+            />
+          </div>
+          <label for="user_email_contact">Email</label>
+          <div class="input-box">
+            <input
+              type="text"
+              name="user_email"
+              placeholder="contact@gmail.com"
+              id="user_email_contact"
+              class="user_email_contact user_email contacts-input"
+            />
+          </div>
+          <textarea
+            name="user_message"
+            class="user_message"
+            placeholder="How can we help you?"
+          ></textarea>
+          <button class="modal_contact-us_btn-submit" type="submit">
+            Contact us
+          </button>
+          <button class="modal_contact-us_btn-close" type="reset">
+            <svg width="32px" height="32px" class="close_btn_icon">
+              <use href="./img/svg_icons.svg#close_btn_icon"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal_buy-products">
+      <div class="modal_buy-products_content">
+        <h3 class="modal_buy-products_heading">Your ordering</h3>
+        <form action="#" method="GET" class="modal_buy-products_form">
+          <label for="user_name_buy" class="lbl_user_name">Name</label>
+          <div class="input-box">
+            <input
+              name="user_name"
+              type="text"
+              id="user_name_buy"
+              class="user_name_buy user_name"
+              placeholder="Maria"
+            />
+          </div>
+          <div class="input-box">
+            <label for="user_tel_buy" class="lbl_user_tel">Phone</label>
+          </div>
+          <div class="input-box">
+            <input
+              type="tel"
+              name="user_tel"
+              placeholder="+380"
+              value="+380"
+              id="user_tel_buy"
+              class="user_tel_buy user_tel"
+            />
+          </div>
+
+          <label for="user_email_buy" class="lbl_user_email">Email</label>
+          <div class="input-box">
+            <input
+              type="text"
+              name="user_email"
+              placeholder="contact@gmail.com"
+              id="user_email_buy"
+              class="user_email_buy user_email"
+            />
+          </div>
+          <label for="select_city">City</label>
+          <select
+            id="select_city"
+            name="select_city"
+            class="modal_buy-products_select_cities"
+          >
+            <option>Dnipro</option>
+            <option>Kiev</option>
+            <option>London</option>
+          </select>
+          <h4 class="modal_buy-products_delivery-heading">Delivery</h4>
+          <div class="modal_buy-products_delivery">
+            <label class="modal_buy-products_delivery-way checked"
+              >To department
+              <input
+                class="modal_buy-products_delivery-way_radio"
+                type="radio"
+                name="delivery-way"
+                value="department"
+                checked
+              />
+            </label>
+            <label class="modal_buy-products_delivery-way"
+              >To door
+              <input
+                class="modal_buy-products_delivery-way_radio"
+                type="radio"
+                name="delivery-way"
+                value="door"
+              />
+            </label>
+          </div>
+          <label class="js--select-department">
+            Select department
+            <select
+              name="select_departments"
+              class="modal_buy-products_select_departments"
+            >
+              <option>1 dep</option>
+              <option>2 dep</option>
+              <option>3 dep</option>
+            </select></label
+          >
+          <div class="modal_buy-products_delivery_adress none">
+            <label>
+              Adress<textarea
+                placeholder="Leave here your adress information"
+                class="delivery_adress_textarea"
+              ></textarea>
+            </label>
+          </div>
+          <h4 class="modal_buy-products_payment_heading">Payment method</h4>
+          <label class="modal_buy-products_payment_radio"
+            ><input type="radio" name="payment" value="credit credit" />Credit
+            card (Visa, Mastercard, ApplePay)</label
+          >
+          <label class="modal_buy-products_payment_radio"
+            ><input type="radio" name="payment" value="cash" checked />Cash on
+            delivery</label
+          >
+          <textarea
+            name="user_comment_to_order"
+            class="user_comment_to_order"
+            placeholder="Add your comment to order?"
+          ></textarea>
+          <label
+            ><input
+              type="checkbox"
+              class="check_box_buy"
+              value="Need to call to confirm"
+            />Do not call to confirm</label
+          >
+          <button class="modal_buy-products_btn-submit">Contact us</button>
+          <button class="modal_buy-products_btn-close" type="reset">
+            <svg width="32px" height="32px" class="close_btn_icon">
+              <use href="./img/svg_icons.svg#close_btn_icon"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
